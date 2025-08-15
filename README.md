@@ -15,4 +15,4 @@ A responsive and modern website for an English school, built with:
 - Tailwind CSS utility-first design
 
 
-   git clone https://github.com/TU-USUARIO/english-school-website.git
+

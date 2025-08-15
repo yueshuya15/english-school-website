@@ -1,4 +1,5 @@
 # English School Website
+> **Note:** This website is still a work in progress and not yet finalized.
 
 A responsive and modern website for an English school, built with:
 

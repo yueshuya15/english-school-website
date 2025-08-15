@@ -1,0 +1,97 @@
+---
+const schools = [
+  {
+    id: 1,
+    name: 'Escuela 1',
+    description: 'Descripción breve de la escuela 1',
+    image: '/images/school1.jpg' // Asegúrate de tener estas imágenes en la carpeta public/images/
+  },
+  {
+    id: 2,
+    name: 'Escuela 2',
+    description: 'Descripción breve de la escuela 2',
+    image: '/images/school2.jpg'
+  },
+  {
+    id: 3,
+    name: 'Escuela 3',
+    description: 'Descripción breve de la escuela 3',
+    image: '/images/school3.jpg'
+  },
+  {
+    id: 4,
+    name: 'Escuela 4',
+    description: 'Descripción breve de la escuela 4',
+    image: '/images/school4.jpg'
+  },
+  {
+    id: 5,
+    name: 'Escuela 5',
+    description: 'Descripción breve de la escuela 5',
+    image: '/images/school5.jpg'
+  },
+  {
+    id: 6,
+    name: 'Escuela 6',
+    description: 'Descripción breve de la escuela 6',
+    image: '/images/school6.jpg'
+  },
+  {
+    id: 7,
+    name: 'Escuela 7',
+    description: 'Descripción breve de la escuela 7',
+    image: '/images/school7.jpg'
+  },
+  {
+    id: 8,
+    name: 'Escuela 8',
+    description: 'Descripción breve de la escuela 8',
+    image: '/images/school8.jpg'
+  },
+  {
+    id: 9,
+    name: 'Escuela 9',
+    description: 'Descripción breve de la escuela 9',
+    image: '/images/school9.jpg'
+  }
+];
+---
+
+<section class="py-16 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">Nuestras Escuelas</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {schools.map(school => (
+        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+          <div class="h-48 overflow-hidden">
+            <img 
+              src={school.image} 
+              alt={school.name}
+              class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">{school.name}</h3>
+            <p class="text-gray-600">{school.description}</p>
+            <button class="mt-4 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors">
+              Ver más
+            </button>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Efecto de hover sutil */
+  .transition-transform {
+    transition: transform 0.3s ease;
+  }
+  
+  .hover\:scale-105:hover {
+    transform: scale(1.05);
+  }
+</style>

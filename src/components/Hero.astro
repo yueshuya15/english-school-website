@@ -1,0 +1,64 @@
+<!--
+  Hero section with a gradient background and a grid layout with a
+  column for the text and a column for the image. The text is centered
+  on mobile and left-aligned on desktop. The image is centered on mobile
+  and right-aligned on desktop. The section has a rounded border and a
+  subtle shadow.
+  -->
+  
+
+
+<!-- HERO PRINCIPAL -->
+<section class="relative flex flex-col items-center justify-center text-center py-16 md:py-28 bg-gradient-to-r from-blue-700 via-sky-500 to-blue-950">
+  <div class="absolute inset-0 opacity-20 pointer-events-none">
+    <img src="/low-poly-grid-haikei.svg" alt="Fondo decorativo" class="w-full h-full object-cover" />
+  </div>
+  <div class="relative z-10 flex flex-col items-center justify-center">
+    <h1 id="hero-title" class="text-5xl lg:text-6xl md:text-4xl font-extrabold text-white drop-shadow-lg mb-6 ">WE MAKE THE DIFFERENCE</h1>
+
+    <p class="text-2xl lg:text-3xl md:text-2xl text-white/90 mb-8 font-medium items-center  justify-center titulo-secundario">Tu camino al inglés comienza aquí</p>
+
+    <img id="hero_image" src="/Icon_English.png" alt="Logo English School" class="w-70 md:w-96 " loading="lazy" />
+
+
+  </div>
+</section>
+<script>
+  import { gsap } from "gsap";
+  import { SplitText } from "gsap/SplitText";
+  gsap.registerPlugin(SplitText);
+
+  // Solo aplicar animación en pantallas grandes (1280px o más)
+  if (window.matchMedia("(min-width: 1280px)").matches) {
+    
+    gsap.to("#hero-title",  {
+     x: 0,
+     delay: 1.5,
+     repeat: 0,
+     scale: 1.3,
+    });
+    //Animacion de imagen
+    gsap.from("#hero_image", {
+      opacity: 100,
+      delay: 2.5,
+      scale: 1.2, 
+       
+      
+      
+
+         
+    });
+    //Animacion de titulo secundario
+    gsap.from(".titulo-secundario", {
+      filter: "blur(10px)",
+      opacity: 1,
+      delay: 2.5,
+      scale: 1.5,
+    });
+  }
+
+  
+  
+ 
+</script>
+

@@ -1,0 +1,123 @@
+---
+import Layout from '../layouts/Layout.astro'
+
+---
+
+<Layout>
+  <!-- HERO PRINCIPAL -->
+  <section class="relative flex flex-col items-center justify-center text-center py-16 md:py-28 bg-gradient-to-r from-blue-700 via-sky-500 to-blue-950">
+    <div class="absolute inset-0 opacity-20 pointer-events-none">
+      <img src="/low-poly-grid-haikei.svg" alt="Fondo decorativo" class="w-full h-full object-cover" />
+    </div>
+    <div class="relative z-10">
+      <h1 class="text-7xl lg:text-8xl md:text-7xl font-extrabold text-white drop-shadow-lg mb-4 animate-swing-drop-in animate-delay-200">Sobre Nosotros</h1>
+      <p class="text-2xl lg:text-3xl md:text-2xl text-white/90 mb-8 font-medium animate-fade-in animate-delay-200">Transformando vidas a través del inglés</p>
+      <img src="/Icon_English.png" alt="Logo English School" class="mx-auto w-32 md:w-44 rounded-xl shadow-lg mb-4 animate-rubber-band" />
+    </div>
+  </section>
+
+  <!-- MISIÓN Y VISIÓN -->
+  <section id="mision-y-vision" class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-16 px-4">
+    <div class="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center text-center">
+      <img src="/Icon_English.png" alt="Misión" class="w-20 h-20 mb-4" />
+      <h2 class="text-3xl font-bold mb-2 text-blue-700">Misión</h2>
+      <p class="text-lg text-gray-700">En English School nos dedicamos a proporcionar una educación de calidad en inglés, adaptada a las necesidades individuales de cada estudiante. Nuestro objetivo es empoderar a las personas a través del conocimiento del idioma, fomentando la confianza y habilidades para que puedan alcanzar sus metas profesionales, académicas y personales en un mundo globalizado.</p>
+    </div>
+    <div class="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center text-center">
+      <img src="/Icon_English.png" alt="Visión" class="w-20 h-20 mb-4" />
+      <h2 class="text-3xl font-bold mb-2 text-blue-700">Visión</h2>
+      <p class="text-lg text-gray-700 mb-2">Ser reconocidos como una de las mejores academias de inglés comprometidas con el desarrollo integral de nuestros estudiantes.</p>
+      <p class="text-lg text-gray-700 mb-2">Buscamos crear un ambiente de aprendizaje dinámico, inclusivo y accesible para todos, en donde cada alumno pueda crecer y desenvolverse con éxito tanto dentro como fuera del aula.</p>
+      <p class="text-lg text-gray-700">En English School no solo enseñamos inglés: <strong class="text-blue-700">INSPIRAMOS CONFIANZA, ABRIMOS PUERTAS Y TRANSFORMAMOS VIDAS.</strong></p>
+    </div>
+  </section>
+  
+
+  <!-- HISTORIA O DIFERENCIA -->
+  <section class="max-w-4xl mx-auto py-16 px-4 text-center ">
+    <h2 class="text-3xl md:text-4xl font-bold text-blue-700 mb-4">Nuestra Historia</h2>
+    <p class="text-lg text-gray-700 mb-4">English School nació del deseo de transformar la educación en idiomas, acercando el inglés a todas las personas, sin importar su edad o experiencia. Nuestro enfoque innovador y humano nos ha permitido crecer y acompañar a cientos de estudiantes en su camino hacia el éxito.</p>
+    <img src="/Nuestra_Historia.png" alt="nuestra historia English School" class="mx-auto w-80 md:w-96 lg:w-[32rem] rounded-xl shadow-xl mt-4" />
+  </section>
+
+  <!-- DIRECTOR -->
+  <section class="max-w-3xl mx-auto py-16 px-4 flex flex-col items-center bg-blue-50 rounded-xl shadow-lg">
+    <img src="/Icon_English.png" alt="Director" class="w-32 h-32 md:w-40 md:h-40 rounded-full shadow-lg mb-4 object-cover animate-blurred-fade-in animate-delay-200" />
+    <h2 class="text-2xl md:text-3xl font-bold text-blue-700 mb-1">Juan Diego Aguilar</h2>
+    <p class="text-lg text-gray-700 mb-2">Director de English School</p>
+    <ul class="list-disc list-inside text-gray-600 mb-4">
+      <li>30 años de experiencia en educación</li>
+      <li>Diplomado en lenguas</li>
+      <li>Creador de proyectos educativos</li>
+      <li>Orador</li>
+    </ul>
+    <p class="italic text-blue-800 text-center animate-jelly animate-delay-200">“NO IGNORES TU CONOCIMIENTO, ES EL PRINCIPIO Y EL FINAL DE LO QUE ERES”</p>
+  </section>
+
+  <!-- TRAYECTORIA Y LIDERAZGO EDUCATIVO -->
+  <section class="max-w-4xl mx-auto py-16 px-4 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-blue-700 mb-4">Trayectoria y Liderazgo Educativo</h2>
+    <p class="text-lg text-gray-700 mb-4">
+      Con más de 14 años de experiencia en el mercado y 9 sedes en el área metropolitana, English School se ha consolidado como un referente en la enseñanza del idioma inglés. Nuestra trayectoria está respaldada por un compromiso inquebrantable con la excelencia educativa y la formación integral de nuestros estudiantes.
+    </p>
+    <p class="text-lg text-gray-700">
+      Nos enorgullece ser parte del crecimiento personal y profesional de miles de alumnos, quienes han alcanzado sus metas gracias a nuestra metodología innovadora y resultados comprobados.
+    </p>
+  </section>
+  <!-- CTA FINAL -->
+  <section id="contacto" class="py-16 px-4 bg-gradient-to-r from-blue-700 via-sky-500 to-blue-950 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">¿Listo para transformar tu futuro?</h2>
+    <p class="text-lg text-white/90 mb-8">Contáctanos y da el primer paso para dominar el inglés con nosotros.</p>
+    <a href="https://api.whatsapp.com/send/?phone=%2B573003554587&text&type=phone_number&app_absent=0 " target="_blank" class="inline-block px-10 py-4 bg-white text-blue-700 font-bold rounded-full shadow-lg hover:bg-blue-50 transition">Escríbenos</a>
+  </section>
+  
+
+  <!-- TESTIMONIOS -->
+  <section class="max-w-6xl mx-auto py-16 px-4">
+    <h2 class="text-3xl md:text-4xl font-bold text-blue-700 text-center mb-8">Testimonios</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center hover:scale-105 transition group">
+        <span class="text-5xl text-blue-200 mb-2 group-hover:rotate-12">“</span>
+        <p class="text-gray-700 mb-2">Gracias a English School ahora puedo comunicarme en mi trabajo y viajar sin miedo.</p>
+        <span class="text-sm font-semibold text-blue-700 group-hover:animate-jelly">— Estudiante 1</span>
+
+      </div>
+
+      <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center hover:scale-105 transition group">
+        <span class="text-5xl text-blue-200 mb-2 group-hover:rotate-12">“</span>
+        <p class="text-gray-700 mb-2">Las clases son dinámicas y los profesores siempre están dispuestos a ayudar.</p>
+        <span class="text-sm font-semibold text-blue-700 group-hover:animate-jelly">— Estudiante 2</span>
+      </div>
+      <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center hover:scale-105 transition group">
+        <span class="text-5xl text-blue-200 mb-2 group-hover:rotate-12">“</span>
+        <p class="text-gray-700 mb-2">Me siento parte de una familia que apoya mi aprendizaje.</p>
+        <span class="text-sm font-semibold text-blue-700 group-hover:animate-jelly p-5">— Estudiante 3</span>
+      </div>
+
+    </div>
+  </section>
+  
+  <script>
+    import gsap from 'gsap'
+    import { ScrollTrigger } from 'gsap/ScrollTrigger'
+    gsap.registerPlugin(ScrollTrigger)
+  
+    if (window.matchMedia("(min-width: 1280px)").matches) {
+      gsap.from("#mision-y-vision", {
+        scrollTrigger: {
+          trigger: "#mision-y-vision",
+          start: "top 60%",
+          toggleActions: "play none none none"
+        },
+        opacity: 0,
+        scale: 0.3,
+        stagger: 0.04,
+        duration: 2,
+        ease: "back.out(1.7)"
+      });
+    }
+  </script>
+
+  
+</Layout>
+

@@ -1,0 +1,23 @@
+@import "tailwindcss";
+@import "@fontsource/inter";
+@import "@fontsource/poppins";
+@import "@fontsource/roboto";
+@plugin "@midudev/tailwind-animations";
+
+/* plugin  @plugin "@midudev/tailwind-animations";*/
+
+:root {
+  --font-sans: "Inter", sans-serif;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  overscroll-behavior: none;
+}

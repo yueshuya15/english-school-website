@@ -1,0 +1,27 @@
+  <!--
+  Header component that contains the logo of the English School, and a nav with four options: HOME, COURSES, ABOUT and CONTACT.
+  The nav is absolute positioned in the center of the screen and the links are hidden until the user is in a medium size device or bigger.
+  The links have a transition effect, when the user hovers over them, they scale up and down.
+  -->
+ <header class="flex items-center justify-between p-4 shadow-md relative bg-gradient-to-b from-gray-200 via-gray-50 to-gray-200">
+    <!-- Logo -->
+    <img src="/Icon_English.png" alt="Icono English School" class="w-20 h-auto animate-slide-in-top animate-delay-300 mr-72">
+    <!-- Nav -->
+    <nav class="  font-bold font-[Roboto] text-center justify-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <ul class="hidden gap-6 text-gray-700 text-md md:flex ">
+            <li class="transition active:scale-95 hover:scale-105 hover:bg-gray-300 rounded px-4 py-2 hover:text-blue-700"><a href="/">HOME</a></li>
+            <li class="transition active:scale-95 hover:scale-105 hover:bg-gray-300 rounded px-4 py-2 hover:text-blue-700"><a href="/CoursesFullUs">COURSES</a></li>
+            <li class="transition active:scale-95 hover:scale-105 hover:bg-gray-300 rounded px-4 py-2 hover:text-blue-700"><a href="/AboutFullUs">ABOUT</a></li>
+            <li class="transition active:scale-95 hover:scale-105 hover:bg-gray-300 rounded px-4 py-2 hover:text-blue-700"><a href="#footer">CONTACT</a></li>
+        </ul>
+    </nav>
+    <!-- Button -->
+     <!--
+    <button class="hidden md:block bg-white text-blue-700 font-semibold px-6 py-2 rounded hover:bg-blue-100 transition active:scale-95 hover:scale-105 ">
+        Empieza ahora!
+      </button>
+    -->
+
+
+
+</header>

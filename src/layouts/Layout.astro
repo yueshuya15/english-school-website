@@ -1,0 +1,21 @@
+---
+import "../styles/global.css";
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
+import gsap from 'gsap';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ENGLISH SCHOOL</title>
+    <link rel="icon" href="/public/Icon_English.png" type="image/png">
+  </head>
+  <Header />
+  <body class="font-sans text-gray-900 bg-white bg-center bg-cover bg-patriotic">
+    <slot />
+   
+  </body>
+  <Footer />
+</html>
